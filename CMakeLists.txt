@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 3.10)
-project(untitled)
+project(MytestCode1)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(untitled main.cpp)
+include_directories(/usr/local/include/opencv /usr/local/include)
+link_directories(/usr/local/lib)
+add_executable(MytestCode1 main.cpp MyTest.cpp)
+target_link_libraries(MytestCode1 opencv_cudabgsegm opencv_cudaobjdetect opencv_cudastereo opencv_dnn opencv_ml opencv_shape opencv_stitching opencv_cudafeatures2d opencv_superres opencv_cudacodec opencv_videostab opencv_cudaoptflow opencv_cudalegacy opencv_calib3d opencv_features2d opencv_highgui opencv_videoio opencv_photo opencv_imgcodecs opencv_cudawarping opencv_cudaimgproc opencv_cudafilters opencv_video opencv_objdetect opencv_imgproc opencv_flann opencv_cudaarithm opencv_core opencv_cudev)

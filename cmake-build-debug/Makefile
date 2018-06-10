@@ -48,10 +48,10 @@ RM = /home/asteria/app/clion-2018.1.3/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/asteria/CLionProjects/untitled
+CMAKE_SOURCE_DIR = /home/asteria/CLionProjects/MyTestCode
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/asteria/CLionProjects/untitled/cmake-build-debug
+CMAKE_BINARY_DIR = /home/asteria/CLionProjects/MyTestCode/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/asteria/CLionProjects/untitled/cmake-build-debug/CMakeFiles /home/asteria/CLionProjects/untitled/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/asteria/CLionProjects/MyTestCode/cmake-build-debug/CMakeFiles /home/asteria/CLionProjects/MyTestCode/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/asteria/CLionProjects/untitled/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/asteria/CLionProjects/MyTestCode/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named untitled
+# Target rules for targets named MytestCode1
 
 # Build rule for target.
-untitled: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 untitled
-.PHONY : untitled
+MytestCode1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 MytestCode1
+.PHONY : MytestCode1
 
 # fast build rule for target.
-untitled/fast:
-	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/build
-.PHONY : untitled/fast
+MytestCode1/fast:
+	$(MAKE) -f CMakeFiles/MytestCode1.dir/build.make CMakeFiles/MytestCode1.dir/build
+.PHONY : MytestCode1/fast
+
+MyTest.o: MyTest.cpp.o
+
+.PHONY : MyTest.o
+
+# target to build an object file
+MyTest.cpp.o:
+	$(MAKE) -f CMakeFiles/MytestCode1.dir/build.make CMakeFiles/MytestCode1.dir/MyTest.cpp.o
+.PHONY : MyTest.cpp.o
+
+MyTest.i: MyTest.cpp.i
+
+.PHONY : MyTest.i
+
+# target to preprocess a source file
+MyTest.cpp.i:
+	$(MAKE) -f CMakeFiles/MytestCode1.dir/build.make CMakeFiles/MytestCode1.dir/MyTest.cpp.i
+.PHONY : MyTest.cpp.i
+
+MyTest.s: MyTest.cpp.s
+
+.PHONY : MyTest.s
+
+# target to generate assembly for a file
+MyTest.cpp.s:
+	$(MAKE) -f CMakeFiles/MytestCode1.dir/build.make CMakeFiles/MytestCode1.dir/MyTest.cpp.s
+.PHONY : MyTest.cpp.s
 
 main.o: main.cpp.o
 
@@ -129,7 +156,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/MytestCode1.dir/build.make CMakeFiles/MytestCode1.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -138,7 +165,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/MytestCode1.dir/build.make CMakeFiles/MytestCode1.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -147,7 +174,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/MytestCode1.dir/build.make CMakeFiles/MytestCode1.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -158,7 +185,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... untitled"
+	@echo "... MytestCode1"
+	@echo "... MyTest.o"
+	@echo "... MyTest.i"
+	@echo "... MyTest.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
