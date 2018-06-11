@@ -6,6 +6,7 @@ CMakeFiles/MytestCode1.dir/MyTest.cpp.o: ../MyTest.h
 
 CMakeFiles/MytestCode1.dir/main.cpp.o: ../MyTest.h
 CMakeFiles/MytestCode1.dir/main.cpp.o: ../main.cpp
+CMakeFiles/MytestCode1.dir/main.cpp.o: /usr/local/include/opencv/cxcore.h
 CMakeFiles/MytestCode1.dir/main.cpp.o: /usr/local/include/opencv2/calib3d.hpp
 CMakeFiles/MytestCode1.dir/main.cpp.o: /usr/local/include/opencv2/calib3d/calib3d_c.h
 CMakeFiles/MytestCode1.dir/main.cpp.o: /usr/local/include/opencv2/core.hpp

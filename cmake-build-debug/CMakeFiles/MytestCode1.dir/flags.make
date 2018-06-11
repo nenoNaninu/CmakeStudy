@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/g++-5
 CXX_FLAGS = -g   -std=gnu++1z
 
-CXX_DEFINES = 
+CXX_DEFINES = -DOPENCV_TRAITS_ENABLE_DEPRECATED
 
-CXX_INCLUDES = -I/usr/local/include 
+CXX_INCLUDES = -isystem /usr/local/include -isystem /usr/local/include/opencv 
 
