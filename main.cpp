@@ -22,5 +22,6 @@ int main() {
     resize(mat,mat,Size(static_cast<int>(mat.cols * 0.1), static_cast<int>(mat.rows * 0.1)));
     imshow("test",mat);
     waitKey(0);
+    std::cout << "Hello, World!" << std::endl;
     return 0;
 }

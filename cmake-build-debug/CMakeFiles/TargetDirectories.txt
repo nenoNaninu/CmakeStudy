@@ -1,3 +1,0 @@
-/home/asteria/CLionProjects/MyTestCode/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/asteria/CLionProjects/MyTestCode/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/asteria/CLionProjects/MyTestCode/cmake-build-debug/CMakeFiles/MytestCode1.dir
